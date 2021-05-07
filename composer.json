@@ -1,0 +1,13 @@
+{
+    "name": "claire/jeu_de_role",
+    "authors": [
+        {
+            "name": "Claire Tourtoulou",
+            "email": "clairetourtoulou@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4" : {"app\\" : "app/"}
+    }
+}

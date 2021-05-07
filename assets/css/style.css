@@ -1,0 +1,20 @@
+body{
+    font-size: 16px;
+    margin: auto;
+    width: 75%;
+}
+.flexiBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flexiBox h2{
+    width: 100%;
+}
+.cartePersonnage {
+    border: burlywood solid thin;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: rgb(240, 221, 197);
+    width: 300px;
+    margin: 0.5em;
+}
