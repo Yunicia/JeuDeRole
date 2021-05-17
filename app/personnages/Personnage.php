@@ -1,5 +1,7 @@
 <?php
 namespace app\personnages;
+use app\armes\Arme;
+use app\armures\Armure;
 
 abstract class Personnage
 {
@@ -10,6 +12,10 @@ abstract class Personnage
     private int $age;
     private bool $sexe; //true femme et false homme
     private int $pointsDeVie;
+    private Armure $armure;
+    private Arme $arme;
+    private int $niveau;
+    private array $competence;
 
     public function __construct(string $pseudo, float $taille, float $poids, int $masseMusculaire, int $age, bool $sexe)
     {
@@ -91,6 +97,46 @@ abstract class Personnage
     public function getPointsDeVie(): int
     {
         return $this->pointsDeVie;
+    }
+
+    public function getCompetence():array
+    {
+        return $this->competence;
+    }
+
+    public function setCompetence(array $competence):void
+    {
+        $this->competence = $competence;
+    }
+
+    public function getArmure():Armure
+    {
+        return $this->armure;
+    }
+
+    public function setArmure(Armure $armure):void
+    {
+        $this->armure = $armure;
+    }
+
+    public function getArme():Arme
+    {
+        return $this->arme;
+    }
+
+    public function setArme(Arme $arme):void
+    {
+        $this->arme = $arme;
+    }
+
+    public function getNiveau():int
+    {
+        return $this->niveau;
+    }
+
+    public function setNiveau(int $niveau):void
+    {
+        $this->niveau = $niveau;
     }
 
     //fin getter/setter

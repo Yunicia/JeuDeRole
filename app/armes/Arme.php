@@ -1,9 +1,8 @@
 <?php
 namespace app\armes;
 
-abstract class Arme implements ArmeInterface{
-    //protected string $nom;
-    protected string $nom;
+abstract class Arme {
+    protected static string $nom;
     protected int $puissancePhysique;
     protected int $puissanceMagique;
 
@@ -13,10 +12,9 @@ abstract class Arme implements ArmeInterface{
         $this->setPuissanceMagique($puissanceMagique);
     }
 
-
-    public function getNom():string
+    public static function getNom():string
     {
-        return $this->nom;
+        return static::$nom;
     }
     public function setPuissancePhysique(int $puissancePhysique):void
     {

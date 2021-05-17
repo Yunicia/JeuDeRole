@@ -1,14 +1,8 @@
 <?php
+declare(strict_types=1);
 include "vendor/autoload.php";
 
-use app\armes\Baton;
-use app\armes\EpeeUneMain;
-use app\armures\Cape;
-use app\armures\PlateArmor;
 use app\factories\PersonnagesFactory;
-use app\personnages\Defenseur;
-use \app\personnages\Personnage;
-use \app\personnages\Soigneur;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +33,7 @@ use \app\personnages\Soigneur;
         <div class="flexiBox">
             <h2>Groupe 2</h2>
             <?php
-            /*$barbare2 = PersonnagesFactory::creerBarbare();
+            $barbare2 = PersonnagesFactory::creerBarbare();
             $defenseur2 = PersonnagesFactory::creerDefenseur();
             $soigneur2 = PersonnagesFactory::creerSoigneur();
             $sorcier2 = PersonnagesFactory::creerSorcier();
@@ -47,7 +41,7 @@ use \app\personnages\Soigneur;
             echo $barbare2->afficheCartePersonnage();
             echo $defenseur2->afficheCartePersonnage();
             echo $soigneur2->afficheCartePersonnage();
-            echo $sorcier2->afficheCartePersonnage();*/
+            echo $sorcier2->afficheCartePersonnage();
             ?>
         </div>
     </div>

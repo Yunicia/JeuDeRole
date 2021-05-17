@@ -1,15 +1,8 @@
 <?php
 namespace app\personnages;
 use app\personnages\Personnage;
-use app\armes\Arme;
-use app\armures\Armure;
-use app\competences\Competance;
 
 class Soigneur extends Personnage {
-    private Armure $armure;
-    private Arme $arme;
-    private int $niveau;
-    private array $competence;
 
     public function afficheCartePersonnage():string
     {
@@ -30,45 +23,5 @@ class Soigneur extends Personnage {
     public function calculForceMagique(): int
     {
         return parent::calculForceBasic() + 20;
-    }
-
-    public function getCompetence():array
-    {
-        return $this->competence;
-    }
-
-    public function setCompetence(array $competence):void
-    {
-        $this->competence = $competence;
-    }
-
-    public function getArmure():Armure
-    {
-        return $this->armure;
-    }
-
-    public function setArmure(Armure $armure):void
-    {
-        $this->armure = $armure;
-    }
-
-    public function getArme():Arme
-    {
-        return $this->arme;
-    }
-
-    public function setArme(Arme $arme):void
-    {
-        $this->arme = $arme;
-    }
-
-    public function getNiveau():int
-    {
-        return $this->niveau;
-    }
-
-    public function setNiveau(int $niveau):void
-    {
-        $this->niveau = $niveau;
     }
 }

@@ -32,7 +32,7 @@ class PersonnagesFactory
                     );
         $babare->setCompetence($competences);
         $epeeUneMain = new EpeeUneMain(15, 10);
-        $armureTank = new PlateArmor("Armure grossière", 20, 15);
+        $armureTank = new PlateArmor(20, 15);
         $babare->setArme($epeeUneMain);
         $babare->setArmure($armureTank);
         return $babare;
@@ -55,7 +55,7 @@ class PersonnagesFactory
                     );
         $defenseur->setCompetence($competences);
         $epeeUneMain = new EpeeUneMain(10, 10);
-        $armureTank = new PlateArmor("Armure", 20, 20);
+        $armureTank = new PlateArmor(20, 20);
         $defenseur->setArme($epeeUneMain);
         $defenseur->setArmure($armureTank);
         return $defenseur;
@@ -78,7 +78,7 @@ class PersonnagesFactory
                     );
         $soigneur->setCompetence($competences);
         $baton = new Baton(8, 20);
-        $cape = new Cape("Capuchon de soigneur", 20, 20);
+        $cape = new Cape(20, 20);
         $soigneur->setArme($baton);
         $soigneur->setArmure($cape);
         return $soigneur;
@@ -101,7 +101,7 @@ class PersonnagesFactory
                     );
         $mage->setCompetence($competences);
         $baton = new Baton(5, 15);
-        $cape = new Cape("Capuchon anti-feu", 15, 15);
+        $cape = new Cape(15, 15);
         $mage->setArme($baton);
         $mage->setArmure($cape);
         return $mage;

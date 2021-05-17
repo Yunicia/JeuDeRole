@@ -19,3 +19,4 @@ class Epee extends Arme{
 
 Baton::test(); //affiche baton
 Epee::test(); //affiche epee
+
